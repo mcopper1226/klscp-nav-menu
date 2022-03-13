@@ -1,0 +1,45 @@
+.desktop {
+  display: none;
+  @media screen and (min-width: 1025px) {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+
+.primaryNav {
+  background: purple;
+  display: flex;
+  padding: 10px 20px;
+  &__branding {
+    width: 20%;
+  }
+  &__utilities {
+    width: 20%;
+    text-align: right;
+  }
+  &__menu {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.active--exact {
+  background: green;
+}
+.active {
+  background: red;
+}
+
+.submenu {
+  background: white;
+  &--open {
+    background: red
+  }
+}
